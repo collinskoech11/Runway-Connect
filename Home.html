@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Runway Connect</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <div style="background:images repeat fixed;width:300px;height:200px;"></div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="class-for-index"></body>>
+
+  <!--navbar start--> 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Runway Connect</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+<!--slides-->
+<style>
+  * {
+    box-sizing: border-box
+  }
+  body {
+    margin: 0
+  }
+  .mySlides {
+    display: none
+  }
+  img {
+    vertical-align: middle;
+  }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  /* Caption text */
+  .text {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+ 
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active,
+  .dot:hover {
+    background-color: #111111;
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 9.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+    }
+  }
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="Images/Slideshow/download.jpg" style="width:100%">
+    <div class="text">Photographers</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/Slideshow/download4.jpg" style="width:100%">
+    <div class="text">Developers</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/Slideshow/B.jpg" style="width:100%">
+    <div class="text">Models</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/Slideshow/download 3.jpg" style="width:100%">
+    <div class="text">Developers</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/Slideshow/download 2.jpg" style="width:100%">
+    <div class="text">Make-up Artists</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/Slideshow/download 1.jpg" style="width:100%">
+    <div class="text">Photographers</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/Slideshow/A.jpg" style="width:100%">
+    <div class="text">Models</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+  var slideIndex = 0;
+  showSlides();
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for(i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if(slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }
+</script>
+</body>
+</html>
