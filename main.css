@@ -2,6 +2,7 @@ body{
 background-image: url("Images/background1.jpg");
 }
 
+
 /* Full-width input fields */
   input[type=text], input[type=password] {
   width: 100%;
@@ -108,5 +109,5 @@ span.psw {
   }
   }
  
-  /*slides*/
+
   
